@@ -191,4 +191,3 @@ http://sjava.net/2011/07/ubuntu%EC%97%90-libreoffice-%EC%84%A4%EC%B9%98%ED%95%98
 
 - Capture = Prt sc 버튼 활용 (shift 누르면 범위지정)
 
-## Wifi 동글이 설치 (railab 기준, archer t2u)
