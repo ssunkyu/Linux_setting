@@ -1,4 +1,4 @@
-# linux_setting
+# Linux_setting
 # Ubuntu 환경 구축
 
 https://github.com/5sik/Linux-setting
