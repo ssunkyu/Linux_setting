@@ -195,10 +195,10 @@ http://sjava.net/2011/07/ubuntu%EC%97%90-libreoffice-%EC%84%A4%EC%B9%98%ED%95%98
 
 Download isaac gym link: https://developer.nvidia.com/isaac-gym
 
-'''bash
+```bash
 //In download folder,
 tar -xvzf [isaacgym file].tar.gz # unzip
-'''
+```
 
 And please follow isaacgym/docs/install.html
 
