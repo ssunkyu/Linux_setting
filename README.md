@@ -2,16 +2,16 @@ Linux_setting
 =============
 
    
-# Ubuntu 20.04 install
+### Ubuntu 20.04 install
   Following: https://shanepark.tistory.com/230/   
   normal보단 minimal이 나음.   
-   
 
-# Apt 저장소 변경
+         
+### Apt 저장소 변경
   Following: https://bigbigpark.github.io/linux/change_repo/   
    
 
-# Chrome, Git, Vim, Terminator, Etc.
+### Chrome, Git, Vim, Terminator, Etc.
   ```bash
   # Chrome
   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -41,7 +41,7 @@ Linux_setting
   ```
    
 
-# miniConda
+### miniConda
 miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   ```bash
   mkdir -p ~/miniconda3
@@ -56,7 +56,7 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   ```
    
 
-# Vscode
+### Vscode
   ```bash
   sudo apt update
   sudo apt install software-properties-common apt-transport-https
@@ -68,7 +68,7 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   ```
    
 
-# AnyDesk
+### AnyDesk
   ```bash
   sudo apt update
   wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
@@ -79,8 +79,7 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   ```
 
    
-# CUDA & Pytorch
-
+### CUDA & Pytorch
 1. Check gpu hardware and CUDA version
 
   ```bash
@@ -106,19 +105,19 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   5. https://pytorch.org/ 여기서 진행
    
    
-# Etc.
+## Etc.
 
-## GCC compile
+### GCC compile
   ```bash
   sudo apt install gcc
   ```
   
   
-## ROS 설치
+### ROS 설치
   Ros noetic설치: https://robostack.github.io/GettingStarted.html
   
   
-## Tips
+### Tips
   - Capture = Prt sc 버튼 활용 (shift 누르면 범위지정)
   
   
