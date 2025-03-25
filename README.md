@@ -2,15 +2,9 @@ Linux_setting
 =============
 
    
-### Ubuntu 20.04 install
-  Following: https://shanepark.tistory.com/230/   
-  normal보단 minimal이 나음.   
+### Ubuntu 24.04 install
 
-         
-### Apt 저장소 변경
-  Following: https://bigbigpark.github.io/linux/change_repo/   
    
-
 ### Chrome, Git, Vim, Terminator, Etc.
   ```bash
   # Chrome
@@ -24,20 +18,21 @@ Linux_setting
   sudo apt-get update
   sudo apt-get install vim
 
-  # Terminator
-  sudo apt-get install terminator
+  # Tmux
+  sudo apt-get install tmux
+
+  # ZSH, OMZ, Power10klevel
+  sudo apt-get install zsh -y
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+  vi ~/.zshrc # -> ZSH_THEME="powerlevel10k/powerlevel10k"
+  source ~/.zshrc
 
   # Etc.
   sudo apt-get install htop
   sudo apt-get install gpustat
   sudo apt-get install imagemagick # can use 'display' command in terminal to view image
   sudo snap install vlc
-  ```
-
-  ```bash
-  # Termiator: ctrl+shift+e가 잘 안되면
-  ibus-setup
-  # 이후에 emoji 단축키 삭제
   ```
    
 
@@ -80,15 +75,15 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
 
    
 ### CUDA & Pytorch
-1. Check gpu hardware and CUDA version
+   1. Check gpu hardware and CUDA version
 
   ```bash
   nvcc --version or nvcc -V # check CUDA version
   nvidia-smi # check whether the GPU is correctly detected
   ```
 
-2. [https://pstudio411.tistory.com/entry/Ubuntu-2004-Nvidia드라이버-설치하기](https://pstudio411.tistory.com/entry/Ubuntu-2004-Nvidia%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
-3. CUDA [link](https://developer.nvidia.com/cuda-toolkit-archive) --> run_file(local)로 해야함. ".run" 실행후 driver 설치는 체크 해제해야함. 안 그러면 사전에 깔려있는 driver 지워짐 [[link](https://velog.io/@seok990301/Nvidia-driver-cuda-%EB%B2%84%EC%A0%84)]
+   2. [https://pstudio411.tistory.com/entry/Ubuntu-2004-Nvidia드라이버-설치하기](https://pstudio411.tistory.com/entry/Ubuntu-2004-Nvidia%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
+   3. CUDA [link](https://developer.nvidia.com/cuda-toolkit-archive) --> run_file(local)로 해야함. ".run" 실행후 driver 설치는 체크 해제해야함. 안 그러면 사전에 깔려있는 driver 지워짐 [[link](https://velog.io/@seok990301/Nvidia-driver-cuda-%EB%B2%84%EC%A0%84)]
 
   ```bash
   #set CUDA path 
@@ -112,24 +107,14 @@ miniconda: https://docs.conda.io/projects/miniconda/en/latest/
   sudo apt install gcc
   ```
   
-  
-### ROS 설치
-  Ros noetic설치: https://robostack.github.io/GettingStarted.html
-  
-  
-### Tips
-  - Capture = Prt sc 버튼 활용 (shift 누르면 범위지정)
-  
-  
 ### 한글 설정
-  Following: https://ieworld.tistory.com/4
+  Following: [https://ieworld.tistory.com/4](https://andrewpage.tistory.com/390)
 
 
 ## Reference: 
-1. Ubuntu 20.04 install: https://shanepark.tistory.com/230
-2. Chrome install: https://jjeongil.tistory.com/1944
-3. Vscode install: https://chunggaeguri.tistory.com/entry/Ubuntu-2004-Visual-Studio-Code-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
-4. Pytorch, CUDA, CUDNN install: https://github.com/5sik/Linux-setting
-5. Apt 저장소 변경: https://bigbigpark.github.io/linux/change_repo/
-6. Vim 설치: https://gabii.tistory.com/entry/Ubuntu-vim-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%A4%EC%A0%95
-7. Ubuntu 한글 설정: https://ieworld.tistory.com/4
+1. Chrome install: https://jjeongil.tistory.com/1944
+2. Vscode install: https://chunggaeguri.tistory.com/entry/Ubuntu-2004-Visual-Studio-Code-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+3. Pytorch, CUDA, CUDNN install: https://github.com/5sik/Linux-setting
+4. Apt 저장소 변경: https://bigbigpark.github.io/linux/change_repo/
+5. Vim 설치: https://gabii.tistory.com/entry/Ubuntu-vim-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%A4%EC%A0%95
+6. Ubuntu 한글 설정: [https://ieworld.tistory.com/4](https://andrewpage.tistory.com/390)
